@@ -15,24 +15,6 @@ export const Container = styled.div`
     width: 400px;
     text-align: center;
   }
-
-  button {
-    background: #29166f;
-    border: 0;
-    border-radius: 5px;
-    width: 350px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    padding: 20px 34px;
-    font-size: 18px;
-
-    &:hover {
-      background: ${shade(0.6, '#FFFFFF')};
-    }
-  }
 `;
 
 export const Title = styled.h1`

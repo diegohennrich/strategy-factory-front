@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { Container, Title, SubTitle, SwotImg, Lista } from './styles';
+import Button from '../../Components/Button';
 import { FaArrowCircleRight } from 'react-icons/fa';
 import Swot from '../../Assets/swot.jpeg';
 import Text from '../../Components/Text';
@@ -492,10 +493,15 @@ const Explicacoes: FC = () => (
 
       <Box top="90px" w="70%" bottom="90px">
         <Link to="/cadastro">
-          <button>
+          <Button
+            icon={FaArrowCircleRight}
+            bgColor="#29166f"
+            color="#FFFFFF"
+            size="350px"
+            iconOrientation="right"
+          >
             Prosseguir para Cadastro
-            <FaArrowCircleRight size="20px" style={{ marginLeft: 10 }} />
-          </button>
+          </Button>
         </Link>
       </Box>
     </Container>

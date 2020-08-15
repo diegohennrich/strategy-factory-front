@@ -6,6 +6,7 @@ import BodyContent from '../../Components/BodyContent';
 import FactoryLogo from '../../Assets/Logo-editado.png';
 import UnisinosLogo from '../../Assets/Unisinos.png';
 import Box from '../../Components/Box';
+import Button from '../../Components/Button';
 
 const Tela1: FC = () => (
   <BodyContent>
@@ -46,10 +47,15 @@ const Tela1: FC = () => (
 
       <Box top="90px" w="52%" bottom="90px">
         <Link to="/explicacoes">
-          <button>
+          <Button
+            icon={FaArrowCircleRight}
+            bgColor="#29166f"
+            color="#FFFFFF"
+            size="200px"
+            iconOrientation="right"
+          >
             INICIAR
-            <FaArrowCircleRight size="20px" style={{ marginLeft: 10 }} />
-          </button>
+          </Button>
         </Link>
       </Box>
     </Container>

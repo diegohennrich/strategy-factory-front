@@ -18,24 +18,6 @@ export const Container = styled.div`
   li:last-child {
     margin-top: 20px;
   }
-
-  button {
-    background: #29166f;
-    border: 0;
-    border-radius: 5px;
-    width: 200px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    padding: 20px 34px;
-    font-size: 18px;
-
-    &:hover {
-      background: ${shade(0.6, '#FFFFFF')};
-    }
-  }
 `;
 
 export const Header = styled.div`
