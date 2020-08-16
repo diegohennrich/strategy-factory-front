@@ -6,7 +6,16 @@ export const Container = styled.div`
   width: 100%;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-bottom: 50px;
+
+  .rotacionar {
+    transform: rotate(90deg);
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+    margin-top: 270px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -22,11 +31,11 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   margin: auto;
 
   h1 {
-    font-size: 20px;
+    font-size: 17px;
   }
 `;
 
@@ -37,7 +46,7 @@ export const Logo = styled.img`
 export const Separator = styled.div`
   display: flex;
   margin-top: 40px;
-  width: 80%;
+  width: 90%;
   text-align: left;
   flex-direction: column;
   align-items: flex-start;
@@ -58,7 +67,7 @@ export const Item = styled.li`
 
 export const Tabela = styled.table`
   width: 700px;
-  margin-top: 50px;
+  margin-top: 10px;
   tr {
     border: 0;
   }
@@ -83,4 +92,31 @@ export const Tabela = styled.table`
     text-transform: uppercase;
     text-align: center;
   }
+`;
+
+export const TabelaPlanoFinal = styled.div`
+  display: flex;
+  justify-content: center;
+
+  table {
+    min-width: 1000px;
+    text-align: center;
+    margin: auto;
+
+    td {
+      border: solid 1px black !important;
+      text-align: center;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 `;

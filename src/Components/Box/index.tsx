@@ -6,9 +6,23 @@ interface Props {
   top?: string;
   bottom?: string;
   textAlign?: string;
+  containerStyle?: object;
 }
-const Box: FC<Props> = ({ w, top, bottom, textAlign, children }) => (
-  <Container w={w} top={top} bottom={bottom} textAlign={textAlign}>
+const Box: FC<Props> = ({
+  w,
+  top,
+  bottom,
+  textAlign,
+  containerStyle,
+  children,
+}) => (
+  <Container
+    style={containerStyle}
+    w={w}
+    top={top}
+    bottom={bottom}
+    textAlign={textAlign}
+  >
     {children}
   </Container>
 );
